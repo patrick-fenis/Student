@@ -1,0 +1,47 @@
+body {
+    font-family: 'Potta One', cursive;
+    color: #3b3a36;
+    font-size: 3em;
+  }
+  
+  h1 {
+    font-size: 1em;
+    display: inline-block;
+  }
+  
+  button {
+      font-size: 1em;
+      padding: .2em;
+      color: #40A69A;
+      background-color: #c0dfd9;
+      /* border: 1px; */
+      outline: none;
+      width: 1.5em;
+      border-radius: 100%;
+      margin-right: .1em;
+      margin-bottom: 1em;
+      margin-left: .75em;
+      margin-top: .5em;
+      box-shadow: 1px 1px 1px  1px #e9ece5;
+  }
+  
+  button:hover {
+    background-color: #e9ece5;
+    color: #fae596;
+  }
+  
+  button:active {
+    background-color: #fae596;
+    color: #40A69A;
+  }
+  
+  .btn-container {
+    width: 90%;
+    margin: auto;
+    display:flex;
+    justify-content: flex-end;
+  }
+  
+  header {
+    display: flex;
+  }
