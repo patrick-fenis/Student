@@ -29,7 +29,7 @@
 
 
 ## Daily Schedule
-### Tuesday/Wednesday
+### Tuesday/Thursday
 | Section | Time |
 |:--:|:---------:|
 | Warm-Up | 45 - 60 mins |
@@ -52,7 +52,7 @@
 
 <br/>
 
-**Outcomes Meetings are every OTHER Wednesday (Starting November 16th) from 5:30pm to 7:30pm EST**
+**Outcomes Meetings are every OTHER Wednesday (Starting November 9th) from 5:30pm to 7:30pm EST**
 
 <br/>
 
