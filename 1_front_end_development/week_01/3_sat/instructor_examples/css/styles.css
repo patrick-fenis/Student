@@ -1,0 +1,31 @@
+body {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+  font-family: Helvetica, Arial, sans-serif;
+} 
+p {
+  background-color: red;
+  font-family: 'Georgia';
+}
+#green-background {
+  color: green;
+}
+.blue-background {
+  background-color: #328da8;
+  /* border: 2px solid black; */
+  border-radius: 2px;
+  margin: 3em;
+  padding: 1em;
+}
+#has-em :first-child {
+  color: orange
+}
+div {
+  display: 'inline';
+  text-align: center;
+}
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100px;
+  line-height: 1.5;
+}
