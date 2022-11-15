@@ -2,7 +2,7 @@
 
 # CSS Games 
 
-Happy Saturday! You'll get to take it relatively easy this morning and play a few games -- CSS practice games, of course!
+Happy Thursday! You'll get to take it relatively easy this afternoon and play a few games -- CSS practice games, of course!
 
 ### [Flexbox Froggy](http://flexboxfroggy.com/)
 
