@@ -15,7 +15,7 @@ _After this lesson students will be able to:_
 
 ## Setup
 
-In `student_examples` for today, make a file `functions.js`
+In the folder you normally take notes, make a file `functions.js`
 
 Test that a console.log will appear in Terminal when you run the file.
 
