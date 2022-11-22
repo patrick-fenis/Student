@@ -60,6 +60,6 @@
 ## Weekly Schedule
 Check the student schedule for links directly to each lesson/lab already taught:
 
-**[Student Schedule]()**
+**[Student Schedule](https://docs.google.com/spreadsheets/d/1rmAdMV7ycTN-GfxPeiPlVGP6_ojLGwI-VbfQFQ2Ee4Q/edit#gid=922848272)**
 
 **NOTE:** Lesson Zoom recordings will also be linked in the student schedule. The schedule is subject to change.
