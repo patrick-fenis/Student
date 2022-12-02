@@ -31,7 +31,7 @@ console.log('SOLAR SYSTEM LAB!!!')
 
 ## Objects Refresher
 
-Remember, objects are a type of **data structure** that we use to store data with greater specificity than arrays. The greater specificity is achieved becaue objects hold what are called **key-value pairs**. Need a longer reminder of what they are? Look back at the [instructor notes on objects](/1_front_end_development/week_03/3_sat/instructor_notes)
+Remember, objects are a type of **data structure** that we use to store data with greater specificity than arrays. The greater specificity is achieved becaue objects hold what are called **key-value pairs**. Need a longer reminder of what they are? Look back at the [instructor notes on objects](/1_front_end_development/week_04/2_thur/instructor_notes)
 
 Before we jump right into nested objects, let's warm-up with a few simple object reps
 
