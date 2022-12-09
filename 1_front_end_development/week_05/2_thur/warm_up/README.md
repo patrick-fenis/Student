@@ -61,6 +61,14 @@ body {
 
 * _NOTE:_ Sometimes, however, you may actually need to use a combination of min and max-width queries to keep your code DRYer. For now, though, let's just get comfortable with min-width queries!
 
+
+Check out the [media_query_example](./media_query_example/) directory inside of this warm_up directory to see a working example of a media query that goes into effect when the screen is at least 700px wide. Open the index.html in that directory in your browser to try it out. 
+
+* _HINT:_ You can easily toggle a mobile view and even select different devices to view your app on in your Chrome dev tools by opening them with `cmd + option + j` and then clicking on the little tablet and phone icon in the top left hand corner. Check out the screenshot below to see exactly where.
+
+![toggle_mobile_dev_tools](https://i.imgur.com/Vtf0MzJ.png)
+
+
 <!-- ## Quick Example 
 
 Now that we know a little bit about media queries, let's check it out in action! I'll be going over how I'd go from the mobile view to the desktop view provided below. The sample files are provided in the `spidey_example` folder.
@@ -77,9 +85,11 @@ Now that we know a little bit about media queries, let's check it out in action!
 
 ## Activity
 
-Now it's your turn to play around with media queries! Try to recreate the following simple responsive design wireframes. The images on the left represent the browser at desktop width while the images on the right represent the same browser but at mobile width. Feel free to choose whichever one you want to start with, just note you will need to make three separate html and css files for each different one!
+Check out the [Flowerbox Mockup Directory](./flowerbox_mockup/README.md). It's a sibling to this README.md file. Go ahead and create the mockup, focusing on mobile first design. That means you want to start off by creating the mobile mockup because it's simpler and then you can add in media queries to make sure the layout adjusts to larger screens. 
 
-![](https://i.imgur.com/NZ0moP0.png)
+<!-- Now it's your turn to play around with media queries! Try to recreate the following simple responsive design wireframes. The images on the left represent the browser at desktop width while the images on the right represent the same browser but at mobile width. Feel free to choose whichever one you want to start with, just note you will need to make three separate html and css files for each different one!
+
+![](https://i.imgur.com/NZ0moP0.png) -->
 
 
 ---
