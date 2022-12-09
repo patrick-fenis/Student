@@ -53,14 +53,18 @@ const Hero = function (name, alias, power) {
   this._power = power
 }
 
-/*
-* Instead of this:
-* const 
-*/
-
 const wonderWoman = new Hero('Diana Prince', 'Wonder Woman', 'Deflect bullets with bracelets')
 
-wonderWoman
+/*
+* Instead of this:
+* const wonderWoman = {
+*   name: 'Diana Prince',
+*   alias: 'Wonder Woman',
+*   power: 'Deflects bullets with bracelets'
+* }
+*/
+
+console.log(wonderWoman)
 // {
 //   name: 'Diana Prince',
 //   alias: 'Wonder Woman',
