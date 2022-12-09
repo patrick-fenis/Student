@@ -43,15 +43,20 @@ Then there's JavaScript... this one is a little controversal.  JavaScript doesn'
 
 
 
-Now, let's create `wonderWoman` using the constructor function instead of an
-object literal:
+Now, let's create `wonderWoman` using something called a [constructor function](https://www.w3schools.com/js/js_object_constructors.asp) instead of an [object literal](https://betterprogramming.pub/object-literal-in-javascript-d3e0e7d58f3b):
 
 ```js
+// We are using this:
 const Hero = function (name, alias, power) {
   this.name = name
   this.alias = alias
   this._power = power
 }
+
+/*
+* Instead of this:
+* const 
+*/
 
 const wonderWoman = new Hero('Diana Prince', 'Wonder Woman', 'Deflect bullets with bracelets')
 
