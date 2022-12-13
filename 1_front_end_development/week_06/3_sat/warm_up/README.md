@@ -26,9 +26,9 @@ Make a 'newspaper' (a `div` element) fly!
 Start from scratch or start with `starter_code`. If you are using the starter code feel free to change the text or any other elements (html and css) to suit your taste.
 
 ## Setup without starter code:
-1. Create a directory for your `flying_newspaper` in today's `morning_exercise` folder.  
+1. Create a directory for your `flying_newspaper` in today's `warm_up` folder.  
 2. Create an `index.html` and `main.css` files within that folder.
-3. Using **only** HTML and CSS (no JavaScript or jQuery!), make a div with a class of `newspaper` amd  add CSS animations to make it fly like the given example!
+3. Using **only** HTML and CSS (no JavaScript!), make a div with a class of `newspaper` and  add CSS animations to make it fly like the given example!
 
 ## Deliverables
 
