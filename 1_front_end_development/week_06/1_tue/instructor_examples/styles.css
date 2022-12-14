@@ -1,0 +1,26 @@
+/* * {
+  background-color: blue;
+} */
+ 
+#name_h1 {
+  background-color: orange;
+}
+
+
+h1 {
+  background-color: blue;
+}
+
+
+.searching_for_this_class {
+  background-color: green;
+}
+
+.foo {
+  color: darkblue;
+}
+
+
+.hide {
+  display: none;
+}
