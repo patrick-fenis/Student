@@ -215,7 +215,7 @@ We will build on the Color Scheme Switcher as we work through the following
 sections of the lesson.
 
 Visit this
-[repository](https://git.generalassemb.ly/seirfx-cosmos/color-scheme-switcher)
+[repository](https://git.generalassemb.ly/SEI-Synchrony-11-22/color_theme_switcher)
 and follow along!
 
 ## The Event Object
