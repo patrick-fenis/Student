@@ -1,0 +1,28 @@
+.button-label {
+  padding: 25px 10px;
+}
+
+.js-button {
+  background-color: darkgray;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  filter: drop-shadow(0px 2px 2px rgb(186, 184, 184));
+  justify-content: center;
+  width: 150px;
+}
+.js-button :hover {
+  cursor: pointer;
+}
+
+.button-text {
+  margin: 5px;
+}
+
+#filler-div {
+  height: 4000px;
+}
+
+.padded-a-tag {
+  padding: 25px;
+}

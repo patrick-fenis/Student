@@ -197,22 +197,19 @@ click on our button, call the <code>handleClickEvent()</code> function.
 
 </details>
 
-## We Do: Practice
+## You Do: Flying Sheep
 
 > 5 minutes exercise. 5 minutes review.
 
-Go to this
-[repository](https://git.generalassemb.ly/seirfx-cosmos/event-listener-practice)
-and follow the instructions.
+Create a button using a div with an h3 inside. When a user clicks that button, show an alert with a number inside. The first time the alert is shown, it should show '1 sheep fly over!', the next time, '2 sheep fly over!' and so on, incrementing the number by 1 each time.
 
 ## Break
 
-## You Do: Color Scheme Switcher
+## We Do: Color Scheme Switcher
 
 > 10 min practice / 5 min review
 
-We will build on the Color Scheme Switcher as we work through the following
-sections of the lesson.
+We will build on the Color Scheme Switcher as we work through the following sections of the lesson but to start, let's build a simple one.
 
 Visit this
 [repository](https://git.generalassemb.ly/SEI-Synchrony-11-22/color_theme_switcher)
@@ -282,7 +279,7 @@ function handleClickEvent(event) {
 ## Event Propagation
 
 Clone down
-[this repository](https://git.generalassemb.ly/seirfx-cosmos/js-event-propagation-practice)
+[this repository](https://git.generalassemb.ly/SEI-Synchrony-11-22/js-event-propagation-practice)
 for a short exercise.
 
 The site in the exercise above has 100 buttons. Your task is to make it so an
@@ -361,7 +358,7 @@ an alert is created with the text "You clicked a button".
 </details>
 
 **Let's refactor the
-[`js-event-propagation`](https://git.generalassemb.ly/seirfx-cosmos/js-event-propagation-practice)
+[`js-event-propagation`](https://git.generalassemb.ly/SEI-Synchrony-11-22/js-event-propagation-practice)
 exercise from above to use event propagation.**
 
 This technique is really helpful when working with a list of links or buttons
