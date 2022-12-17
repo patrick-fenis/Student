@@ -19,7 +19,6 @@ Prerequisites: CSS, HTML <br>
 Make a 'newspaper' (a `div` element) fly!
 
 > [Original Inspiration](https://www.youtube.com/watch?v=GaiZIulY4EU)<br/>
-> [Karolin's Version](https://youtu.be/V6RqAjbjnU0)
 
 
 ## Choices
