@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs') %>
+    <h1>Fruit Index</h1>
+
+    <ul>
+      <% for(let i = 0; i < fruits.length; i++) {
+        // you can have multiple lines between statement tags
+        // https://ejs.co/
+        // https://ejs.co/#docs
+        console.log(fruits[i].name)
+        let fruitNumber = i + 1
+      %>
+        <li>
+          <a href="/fruits/<%= i %>"> <%= fruits[i].name %> </a>
+          It is <%= fruits[i].readyToEat ? "" : "NOT" %> ready to eat.
+          <!--  ADD DELETE FORM HERE-->
+          
+         </li>
+      <% } %>
+    </ul>
+<%- include('./partials/footer.ejs') %>
