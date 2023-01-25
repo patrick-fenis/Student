@@ -3,8 +3,8 @@
 ---
 Title: Forms<br>
 Type: Morning Exercise<br>
-Creator: Jerrica Bobadilla <br>
-Competencies: CSS, HTML
+Creator: Hunter Wallen <br>
+Competencies: JS
 
 ---
 
@@ -14,4 +14,4 @@ Code wars is an awesome platform that allows you to practice coding interview st
 
 ## Activity
 
-CodeWars orders problems by difficulty starting at 8kyu for the easiest and going to 1kyu for the easiest. Go ahead and take this warm-up time to pick a challenge and solve it!
+CodeWars orders problems by difficulty starting at 8kyu for the easiest and going to 1kyu for the most difficult. Go ahead and take this warm-up time to pick a challenge and solve it!
