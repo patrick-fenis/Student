@@ -9,6 +9,13 @@ app.use(methodOverride('_method'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+app.use((req, res, next) => {
+  console.log('I run for all routes')
+  next()
+})
+
+app.use(express.static('public'))
+
 const fruits = require('./models/fruits.js')
 
 app.get('/fruits', (req, res) => {
@@ -31,6 +38,11 @@ app.get('/fruits/:indexOfFruitsArray', (req, res) => {
   } else {
     res.send('Could not find fruit at index: ' + req.params.indexOfFruitsArray)
   }
+})
+
+app.post('/products', (req, res) => {
+  console.log('Create route accessed!')
+  res.send('This route works!')
 })
 
 app.post('/fruits', (req, res) => {
