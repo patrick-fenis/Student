@@ -1,0 +1,34 @@
+/* VARIABLES */
+:root {
+  --bright-pink: #e74c83;
+  --purple: #735066;
+  --dusty-blue: #74c4cc;
+  --bright-blue: #14bece;
+}
+
+/* GENERAL */
+body {
+  background: #ddd;
+  font-family: helvetica;
+}
+
+/* CONTAINERS */
+.container {
+
+}
+.sidebar {
+
+}
+.registration {
+
+}
+
+/* ETC. DECORATION */
+h1 {
+  font-family: 'Oswald';
+  font-weight: 500;
+  color: var(--bright-pink);
+  border-bottom: 2px solid var(--bright-blue);
+}
+
+/* FORMS */

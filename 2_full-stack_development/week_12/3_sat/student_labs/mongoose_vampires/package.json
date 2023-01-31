@@ -1,0 +1,17 @@
+{
+  "name": "mongoose_vampires",
+  "version": "1.0.0",
+  "description": "lab",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "mongoose": "^6.5.2"
+  }
+}
