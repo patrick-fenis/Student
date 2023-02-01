@@ -57,6 +57,26 @@ app.post('/fruits', (req, res) => {
   res.redirect('/fruits')
 })
 
+app.get('/fruits/:index/edit', (req, res) => {
+  res.render(
+    'edit.ejs',
+    {
+      fruit: fruits[req.params.index],
+      index: req.params.index
+    }
+  )
+})
+
+app.put('/fruits/:index', (req, res) => {
+  if(req.body.readyToEat === 'on'){
+    req.body.readyToEat = true
+  } else {
+    req.body.readyToEat = false
+  }
+  fruits[req.params.index] = req.body
+  res.redirect('/fruits')
+})
+
 app.delete('/fruits/:index', (req, res) => {
   fruits.splice(req.params.index, 1)
   res.redirect('/fruits')

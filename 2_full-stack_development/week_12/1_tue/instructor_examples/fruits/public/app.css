@@ -32,6 +32,18 @@ a:hover {
 
 li {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding: 1em 1em;
+  border-bottom: .5px solid lightgray;
+}
+
+ul {
+  padding: 0;
 }
 
 li a {
@@ -43,6 +55,14 @@ input[type=text] {
 }
 
 input[type=submit] {
+  padding: .3em;
+  color: orange;
+  background: mediumseagreen;
+  font-size: 1em;
+  border-radius: 10%;
+}
+
+.edit_button {
   padding: .3em;
   color: orange;
   background: mediumseagreen;
