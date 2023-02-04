@@ -1,67 +1,48 @@
-const express = require('express');
-const app = express();
-const fruits = require('./models/fruits.js');
-const methodOverride = require('method-override');
-const { render } = require('ejs');
+const express = require('express')
+const app = express()
+const mongoose = require('mongoose')
+const Fruit = require('./models/fruits.js')
 
-// MIDDLEWARE  
-app.use(express.static('public'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
-// DEFAULT 
-app.get('/', (req, res) => {
-	const today = new Date();
-	res.send(`
-    <h1>Hello! This is the Fruit app</h1>
-    <p>Thanks for using our site</p>
-    <p>${today}</p>
-  `);
-});
-
-// INDEX
 app.get('/fruits', (req, res) => {
-	res.render('index.ejs', { fruits: fruits });
-});
+  Fruit.find((err, fruits) => {
+    res.send(fruits)
+  })
+})
 
-// NEW
 app.get('/fruits/new', (req, res) => {
-	res.render('new.ejs');
-});
+  res.render('new.ejs')
+})
 
-// SHOW
-app.get('/fruits/:id', (req, res) => {
-	const fruit = fruits[req.params.id];
-
-	res.render('show.ejs', {
-		fruit: fruit,
-	});
-});
-
-// CREATE
 app.post('/fruits', (req, res) => {
-	const fruitToAdd = {
-		name: req.body.name,
-		color: req.body.color,
-	};
+  console.log(req.body)
+  if(req.body.readyToEat === 'on'){
+    req.body.readyToEat = true
+  } else {
+    req.body.readyToEat = false
+  }
 
-	if (req.body.readyToEat === 'on') {
-		fruitToAdd.readyToEat = true;
-	} else {
-		fruitToAdd.readyToEat = false;
-	}
+  Fruit.create(req.body, (err, createdFruit) => {
+    if(err){
+      console.log(err)
+      res.send(err)
+    } else {
+      res.send(createdFruit)
+    }
+  })
+})
 
-	fruits.push(fruitToAdd);
 
-	res.redirect('/fruits');
-});
 
-// DESTROY
+mongoose.connect('mongodb://localhost:27017/basiccrud')
+mongoose.connection.once('open', () => {
+  console.log('connected to mongo')
+})
 
-// UPDATE
 
-// EDIT
 
 app.listen(3000, () => {
-	console.log('Server running on port 3000');
-});
+  console.log('listening')
+})
