@@ -8,7 +8,7 @@ const Vampire = require('./models/vampire.js')
 
 // Configuration
 
-const mongoURI = `mongodb+srv://new-user:PASSWORD@cluster0.f1wos.mongodb.net/vampires?retryWrites=true&w=majority`
+const mongoURI = ‘mongodb://localhost:27017/’ + ‘./vampire’
 const db = mongoose.connection
 
 // Connect to Mongo
