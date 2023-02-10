@@ -1,73 +1,24 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-const Fruit = require('./models/fruits.js')
-const fruitsSeed = require('./seedData/data.js')
+const methodOverride = require('method-override')
+const fruitsController = require('./controllers/fruits.js')
+const usersController = require('./controllers/users.js')
 
+app.use(methodOverride('_method'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
+app.use('/fruits', fruitsController)
+app.use(usersController)
 
-app.get('/fruits', (req, res) => {
-  // res.render('index.ejs')
-  Fruit.find((err, fruits) => {
-    if(err){
-      console.log(err, ': ERROR IN INDEX ROUTE QUERY')
-    } else {
-      console.log(fruits)
-      res.render('index.ejs', {
-        fruits: fruits
-      })
-    }
-  })
+app.get('/', (req, res) => {
+  res.send('This app is working')
 })
 
-app.get('/fruits/new', (req, res) => {
-  res.render('new.ejs')
+app.get('/fruit/new', (req, res) => {
+  res.send('gotcha')
 })
 
-app.get('/fruits/seed', (req, res) => {
-  Fruit.create(fruitsSeed, (err, data) => {
-    if(err){
-      console.log(err, ': ERROR AT SEED ROUTE')
-    } else {
-      console.log('DATABASE SEEDED SUCCESSFULLY')
-      res.redirect('/fruits')
-    }
-  })
-})
-
-app.get('/fruits/:id', (req, res) => {
-  // res.render('show.ejs')
-  Fruit.findById(req.params.id, (err, foundFruit) => {
-    if(err){
-      console.log(err, ': ERROR AT FRUITS SHOW ROUTE')
-    } else {
-      console.log(foundFruit, ': SUCCESS, FOUND FRUIT FOR SHOW ROUTE')
-      res.render('show.ejs', {
-        fruit: foundFruit
-      })
-    }
-  })
-})
-
-app.post('/fruits', (req, res) => {
-  console.log(req.body)
-  if(req.body.readyToEat === 'on'){
-    req.body.readyToEat = true
-  } else {
-    req.body.readyToEat = false
-  }
-
-  Fruit.create(req.body, (err, createdFruit) => {
-    if(err){
-      console.log(err)
-      res.send(err)
-    } else {
-      // res.send(createdFruit)
-      res.redirect('/fruits')
-    }
-  })
-})
 
 
 
