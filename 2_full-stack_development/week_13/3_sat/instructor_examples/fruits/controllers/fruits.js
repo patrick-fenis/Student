@@ -1,9 +1,12 @@
 const express = require('express')
-const router = express.Router()
+const fruits = express.Router()
 const Fruit = require('../models/fruits.js')
 const fruitsSeed = require('../seedData/data.js')
+const isAuthenticated = require('../utils/middleware.js')
 
-router.get('/', (req, res) => {
+fruits.use(isAuthenticated)
+
+fruits.get('/', (req, res) => {
   // res.render('index.ejs')
   Fruit.find((err, fruits) => {
     if(err){
@@ -11,17 +14,20 @@ router.get('/', (req, res) => {
     } else {
       console.log(fruits)
       res.render('index.ejs', {
-        fruits: fruits
+        fruits: fruits,
+        currentUser: req.session.currentUser
       })
     }
   })
 })
 
-router.get('/new', (req, res) => {
-  res.render('new.ejs')
+fruits.get('/new', isAuthenticated, (req, res) => {
+  res.render('new.ejs', {
+    currentUser: req.session.currentUser
+  })
 })
 
-router.get('/seed', (req, res) => {
+fruits.get('/seed', (req, res) => {
   Fruit.create(fruitsSeed, (err, data) => {
     if(err){
       console.log(err, ': ERROR AT SEED ROUTE')
@@ -32,7 +38,7 @@ router.get('/seed', (req, res) => {
   })
 })
 
-router.get('/:id', (req, res) => {
+fruits.get('/:id', (req, res) => {
   // res.render('show.ejs')
   Fruit.findById(req.params.id, (err, foundFruit) => {
     if(err){
@@ -40,13 +46,14 @@ router.get('/:id', (req, res) => {
     } else {
       console.log(foundFruit, ': SUCCESS, FOUND FRUIT FOR SHOW ROUTE')
       res.render('show.ejs', {
-        fruit: foundFruit
+        fruit: foundFruit,
+        currentUser: req.session.currentUser
       })
     }
   })
 })
 
-router.get('/:id/edit', (req, res) => {
+fruits.get('/:id/edit', (req, res) => {
   Fruit.findById(req.params.id, (err, foundFruit) => {
     if(err){
       console.log(err, ' - ERROR WITH EDIT GET ROUTE')
@@ -54,14 +61,15 @@ router.get('/:id/edit', (req, res) => {
       res.render(
         'edit.ejs',
         {
-          fruit: foundFruit
+          fruit: foundFruit,
+          currentUser: req.session.currentUser
         }
       )
     }
   })
 })
 
-router.post('/', (req, res) => {
+fruits.post('/', (req, res) => {
   console.log(req.body)
   if(req.body.readyToEat === 'on'){
     req.body.readyToEat = true
@@ -80,7 +88,7 @@ router.post('/', (req, res) => {
   })
 })
 
-router.delete('/:id', (req, res) => {
+fruits.delete('/:id', (req, res) => {
   Fruit.findByIdAndDelete(req.params.id, (err, data) => {
     if(err){
       console.log(err, ' - ERROR AT DELETE ROUTE')
@@ -90,7 +98,7 @@ router.delete('/:id', (req, res) => {
   })
 })
 
-router.put('/:id', (req, res) => {
+fruits.put('/:id', (req, res) => {
   if(req.body.readyToEat === 'on'){
     req.body.readyToEat = true
   } else {
@@ -105,4 +113,4 @@ router.put('/:id', (req, res) => {
   })
 })
 
-module.exports = router
+module.exports = fruits
