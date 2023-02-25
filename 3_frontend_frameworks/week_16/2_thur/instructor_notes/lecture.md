@@ -33,14 +33,20 @@ Every Component has `props` and that is how data is passed from a parent to a ch
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
-Let's all fork this code sandbox as our starter code [Bootstrap Cards](https://codesandbox.io/s/bootstrap-cards-starter-s0dtn) in  `React Developer Tools` see if anything `props` related pops out. 
+Today we're going to be working in the `bootstrap-cards-starter-forked` directory, which can be found in your student_examples folder for today. 
+- `cd student_examples && cd bootstrap-cards-starter-forked`
+- Run `npm i` to install the dependencies
+- Run `npm start` to start your react app
+- Once the app is running, open up your `React Developer Tools` to see if anything `props` related pops out. 
+
+**If you don't have React Developer Tools yet, install the chrome extension [here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)**
 
 <!-- https://codesandbox.io/s/bootstrap-solution-nero2?file=/src/App.js -->
 <!-- https://codesandbox.io/s/seir-831-bootstrap-solution-r8p9i?file=/src/App.js -->
 
 If we highlight the `Card1` Component we will see something called `props` to the right. 
 
-<img src="https://i.imgur.com/qzpnB0y.png" /><br>
+<img src="https://i.imgur.com/TdMdm02.png" /><br>
 
 Since we haven't yet passed any data to these Components there is nothing to show.
 
@@ -429,11 +435,6 @@ Take a moment to update the `CardImage` and `Button` Component to make use of Ob
 :thumbsup: Click on the thumbs up when your done.
 
 <hr>
-
-### Final Solution
-
-Here is the [Final Solution](https://codesandbox.io/s/seir-831-bootstrap-props-starter-zeuwb?file=/src/App.js:72-76) 
-
 
 
 
