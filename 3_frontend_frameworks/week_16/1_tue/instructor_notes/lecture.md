@@ -11,8 +11,6 @@
 
  ### What is React
 
- [Reference](https://generalassemb.ly/coding/full-stack-web-development/beginners-guide-react)
-
 We've already been building web sites based on data. We've been using server-side rendering with a template engine (ie `EJS`). While there are many upsides to server-side rendering, there are some down sides.
 - it can be cumbersome to maintain, when you want to change one thing, you have to change things across many files
 - your data is tightly coupled with your view of the data (embedding our data inside of HTML using `EJS`)
