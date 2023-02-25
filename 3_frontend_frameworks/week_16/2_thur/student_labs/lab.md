@@ -9,7 +9,7 @@ Creator:  Joe Keohan<br>
 
 In this exercise, you will practice creating reusable React Components.
 
-Use the following [CodeSandbox Starter](https://codesandbox.io/s/adoring-goodall-mhive) code
+Use the following [starter_code](./starter_code/) directory
 
 #### React Hierarchy 
 
@@ -18,6 +18,8 @@ Here is the React Hierarchy you will be implementing:
 <img src="https://i.imgur.com/7YlFsU7.png" width=500/><br>
 
 #### Getting Started
+
+Make sure you run `npm i` to install react and all of the other dependencies. Then run `npm start` to get the app to load in your browser.
 
 In `src/index.html` you will find five weather elements that generate the output you are seeing now.
 
