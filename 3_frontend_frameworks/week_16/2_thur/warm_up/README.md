@@ -77,4 +77,4 @@ Perfect squares:
 
 # HUNGRY FOR MORE? 
 
-If you haven't finished any of the previous computer science morning exercises, [go back and finish those](../../w10d02/morning_exercise)! Or, continue on with [myGA modules](../../w10d03/morning_exercise) at your own pace.  
+If you haven't finished signed up for Codewars yet, sign up now and then go ahead and work on some Algorithm challenges.
