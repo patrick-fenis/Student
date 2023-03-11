@@ -820,10 +820,4 @@ _NOTE, if you wanted to deploy to Version you'd include a vercel.json with the f
 **[Finished Backend App Example](https://git.generalassemb.ly/AlexMerced/people_backend)**
 **[Finished Frontend App Example](https://git.generalassemb.ly/AlexMerced/people_frontend)**
 
-## Lab - Complete Your Cheese App
-
-Complete your cheese app using the steps of todays lessons adding the following:
-
-- the ability see an individual cheese
-- the ability edit a cheese
-- the ability to delete a cheese
+## Lab - Complete Your React-Express Portfolio Lab/HW
